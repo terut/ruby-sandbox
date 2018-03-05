@@ -3,13 +3,10 @@ module.exports = {
   output: {
     filename: './react-bundle.js'
   },
-
   devtool: 'source-map',
-
   resolve: {
     extensions: ['.ts', '.tsx', '.js']
   },
-
   module: {
     rules: [
       {
