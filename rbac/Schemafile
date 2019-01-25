@@ -1,0 +1,20 @@
+create_table :users, force: :cascade do |t|
+  t.string :username
+  t.references :role
+  t.timestamps
+end
+
+create_table :roles, force: :cascade do |t|
+  t.string :name
+  t.timestamps
+end
+
+create_table :permissions, force: :cascade do |t|
+  t.string :name
+  t.timestamps
+end
+
+create_table :roles_permissions, force: :cascade do |t|
+  t.references :role
+  t.references :permission
+end

@@ -1,0 +1,4 @@
+adapter: "mysql2"
+host: "127.0.0.1"
+username: "root"
+database: "rbac_example"
