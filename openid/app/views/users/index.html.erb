@@ -1,0 +1,13 @@
+<h2>Users</h2>
+<ul>
+<% @users.each do |u| %>
+  <p><%= u.username %></p>
+<% end %>
+</ul>
+
+<% if logged_in? %>
+  <span>logged in as <%= current_user.username %></span>
+<% else %>
+  <%= link_to :login, login_path %>
+<% end %>
+<%= link_to :applications, oauth_authorized_applications_path %>

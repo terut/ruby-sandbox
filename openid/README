@@ -1,0 +1,13 @@
+### Experimental OpenID Connect Implementation
+
+```sh
+$ bundle install --path vendor/bundle --clean
+$ be rake db:migrate
+# it create "mario" as user. ID/PW is `mario/mario`
+$ be rake db:seed
+$ be rails s
+```
+
+### LICENSE
+
+MIT
