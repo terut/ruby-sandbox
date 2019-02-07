@@ -8,6 +8,20 @@ $ be rake db:seed
 $ be rails s
 ```
 
+1. First of all, see `http://localhost:3000`.
+2. Login as mario.
+3. Visit `http://localhost:3000/oauth/applications`
+4. Add new application. Use `urn:ietf:wg:oauth:2.0:oob` as redirect_uri and set up as non-confidential.
+5. Then you can see Authorize button on `http://localhost:3000/oauth/applications/1`.
+6. Click Authorize button, and then the application show authorization_code becase it uses authorization code flow.
+7. You can exchange authorization_code for access_token. Use curl command as follows.
+
+```sh
+$ curl -d "grant_type=authorization_code" -d "client_id=21dfbecdf65140fb4b7fb531e115ab056a0631dac5dfc4a1b87282f3106c2d25" -d "redirect_uri=urn:ietf:wg:oauth:2.0:oob" -d "code=3419ff66cf0be5cc04df493aa5f07bd84f72432422eb8cd2bae5ee65c9b37f4d" -X POST http://localhost:3000/oauth/token
+
+{"access_token":"0c83ce167489d879bdc2dedd12f339bc6742990ca626d0a7645bb01151cf9b2f","token_type":"Bearer","expires_in":7200,"created_at":1549527384}
+```
+
 ### LICENSE
 
 MIT
