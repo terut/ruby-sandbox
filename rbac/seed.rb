@@ -22,7 +22,7 @@ permissions = {
 permissions.each do |r, ps|
   role = Role.find_by(name: r)
   ps.each do |p|
-    permission = Permission.create(name: p)
+    permission = Permission.find_or_create_by(name: p)
     RolesPermission.create(role: role, permission: permission)
   end
 end
