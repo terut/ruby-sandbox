@@ -1,0 +1,50 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.1.1/themes/algolia.css" integrity="sha256-4SlodglhMbXjGQfNWiCBLSGNiq90FUw3Mtre9u4vLG8=" crossorigin="anonymous">
+  <script>
+    const APP_ID = "<%= app_id %>";
+    const SECURED_API_KEY = "<%= secured_api_key %>";
+  </script>
+</head>
+<body>
+  <header>
+    <div id="search-box"></div>
+  </header>
+
+  <main>
+      <div id="hits"></div>
+      <div id="pagination"></div>
+      <div>
+        <div>current user: <b><%= "#{current_username} (organization=#{organization} groups=#{groups})" %></b></div>
+        <div>
+          <% users.each do |u| %>
+            <a href="/?username=<%= u %>"><%= u %></a>
+          <% end %>
+        </div>
+      </div>
+  </main>
+
+  <script type="text/html" id="hit-template">
+    <div class="hit">
+      <p class="hit-objectID">
+        {{objectID}}
+      </p>
+      <p class="hit-organization">
+        organization: {{organization}}
+      </p>
+      <p class="hit-groups">
+        viewable_by: {{viewable_by}}
+      </p>
+      <p class="hit-name">
+        {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
+        {{#helpers.highlight}}{ "attribute": "viewable_by" }{{/helpers.highlight}}
+        {{#helpers.highlight}}{ "attribute": "organization" }{{/helpers.highlight}}
+      </p>
+    </div>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.1/dist/algoliasearchLite.min.js" integrity="sha256-NSTRUP9bvh8kBKi7IHQSmOrMAdVEoSJFBbTA+LoRr3A=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.2.0" integrity="sha256-/8usMtTwZ01jujD7KAZctG0UMk2S2NDNirGFVBbBZCM=" crossorigin="anonymous"></script>
+  <script src="/app.js"></script>
+</body>
