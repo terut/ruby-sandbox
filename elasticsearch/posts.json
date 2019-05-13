@@ -1,0 +1,96 @@
+[
+  {
+    "objectID": "myID1",
+    "post": "『納得』は全てに優先するぜッ！！でないとオレは『前』へ進めねぇッ！『どこへ』も！『未来』への道も！探す事は出来ねえッ！！",
+    "author_name": "Bob",
+    "viewable_by": [
+      1,
+      2,
+      3
+    ],
+    "organization": [
+      1
+    ]
+  },
+  {
+    "objectID": "myID2",
+    "post": "わが心と行動に一点の曇りなし………! 全てが「正義」だ",
+    "author_name": "Henry",
+    "viewable_by": [
+      3
+    ],
+    "organization": [
+      1
+    ]
+  },
+  {
+    "objectID": "myID3",
+    "post": "ジョルノッ！おまえの命がけの行動ッ！ぼくは敬意を表するッ！",
+    "author_name": "Doug",
+    "viewable_by": [
+      1,
+      2
+    ],
+    "organization": [
+      1
+    ]
+  },
+  {
+    "objectID": "myID4",
+    "post": "「ブッ殺す」と心の中で思ったならッ!その時スデに行動は終わっているんだッ！",
+    "author_name": "Anne",
+    "viewable_by": [
+      0
+    ],
+    "organization": [
+      1
+    ]
+  },
+  {
+    "objectID": "myID5",
+    "post": "ミスタ…あなたの「覚悟」は…この登りゆく朝日よりも明るい輝きで「道」を照らしている　そして我々がこれから『向かうべき…正しい道』をもッ！",
+    "author_name": "John",
+    "viewable_by": [
+      4,
+      5,
+      6
+    ],
+    "organization": [
+      2
+    ]
+  },
+  {
+    "objectID": "myID6",
+    "post": "「覚悟」とは………………犠牲の心ではないッ！「覚悟」とは！！暗闇の荒野に！！進むべき道を切り開くことだッ！",
+    "author_name": "May",
+    "viewable_by": [
+      5
+    ],
+    "organization": [
+      2
+    ]
+  },
+  {
+    "objectID": "myID7",
+    "post": "掴まえられるのも覚悟の上だ…「任務は遂行する」「部下も守る」「両方」やらなくちゃあならないってのが「幹部」のつらいところだな 覚悟はいいか？オレはできてる",
+    "author_name": "Pet",
+    "viewable_by": [
+      4,
+      6
+    ],
+    "organization": [
+      2
+    ]
+  },
+  {
+    "objectID": "myID8",
+    "post": "わかったよプロシュート兄ィ!!兄貴の覚悟が!『言葉』でなく『心』で理解できた！行動する",
+    "author_name": "Lee",
+    "viewable_by": [
+      0
+    ],
+    "organization": [
+      2
+    ]
+  }
+]

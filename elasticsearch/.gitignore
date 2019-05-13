@@ -1,0 +1,7 @@
+.env
+users.yaml
+
+vendor/bundle
+.bundle
+
+!.gitkeep
